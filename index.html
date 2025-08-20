@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RevealJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+
+    <!-- Code highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title Slide -->
+        <section>
+          <h2>Quarterly Earnings Report</h2>
+          <p>Prepared by: <b>24f3003609@ds.study.iitm.ac.in</b></p>
+          <aside class="notes">
+            Introduce yourself, mention your role as a technical consultant, and outline what the stakeholders will see.
+          </aside>
+        </section>
+
+        <!-- Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+            ## Financial Overview
+            - Revenue Growth: **+12%**
+            - Net Profit: **$2.5M**
+            - EPS: **$1.32**
+          </textarea>
+          <aside class="notes">
+            This slide is written in Markdown for flexibility.
+          </aside>
+        </section>
+
+        <!-- Animated Fragments -->
+        <section>
+          <h3>Key Highlights</h3>
+          <ul>
+            <li class="fragment">Strong performance in North America</li>
+            <li class="fragment">Improved operational efficiency</li>
+            <li class="fragment">Digital transformation initiatives</li>
+          </ul>
+          <aside class="notes">
+            Click through each bullet one by one for emphasis.
+          </aside>
+        </section>
+
+        <!-- Code Sample -->
+        <section>
+          <h3>Data Pipeline Example</h3>
+          <pre><code class="language-python">
+import pandas as pd
+
+data = pd.read_csv("earnings.csv")
+growth = data["revenue"].pct_change().mean()
+print("Quarterly Growth:", growth)
+          </code></pre>
+          <aside class="notes">
+            This shows how revenue growth is calculated with Python.
+          </aside>
+        </section>
+
+        <!-- Math Equation -->
+        <section>
+          <h3>Financial Formula</h3>
+          <p>
+            $$ \text{Earnings Per Share (EPS)} = \frac{\text{Net Income} - \text{Dividends on Preferred Stock}}{\text{Average Outstanding Shares}} $$
+          </p>
+          <aside class="notes">
+            EPS formula is crucial for investor analysis.
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- RevealJS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+      });
+    </script>
+  </body>
+</html>
